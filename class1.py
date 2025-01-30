@@ -26,8 +26,6 @@ data['descricao_local'] = data['descricao_local'].str.split()
 data['comodidades'] = data['comodidades'].str.replace('\{|}|\"','',regex=True)
 data['comodidades'] = data['comodidades'].str.split(',')
 
-#Transform Date Data
-
 #Print Data
 print(data.head())
 print(data.info())
